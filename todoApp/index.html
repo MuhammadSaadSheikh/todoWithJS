@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="./img/1.png" type="image/icon type">
+    <title> Todo App</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=McLaren&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./fontAwesome css/all.css">
+</head>
+
+<body>
+    <div id="parentDiv" class="mainBody">
+        <div class='mainContainer' id="frontWrapper">
+            <div class="headingWrapper">
+                <p class="head1">todoWith</p>
+                <p class="head2">ES6</p>
+            </div>
+            <div class="secondContainer">
+                <div class="child2"></div>
+                <div class="child1">
+                    <div class="optionWrapper">
+                        <div class="nestedChild1">
+                            <i class="far fa-lightbulb icon"></i>
+                            <h2 class="category1">Open</h2>
+                        </div>
+                        <div class="nestedChild2">
+                            <i class="far fa-chart-bar icon"></i>
+                            <h2 class="category2">InProgress</h2>
+                        </div>
+                        <div class="nestedChild3">
+                            <i class="far fa-check-square icon"></i>
+                            <h2 class="category3">Done</h2>
+                        </div>
+                    </div>
+                    <div class="dataWrapper">
+                        <div class="datail1" id="openContainer"></div>
+                        <div class="detail2" id="inprogressContainer"></div>
+                        <div class="detail3" id="doneContainer"></div>
+                    </div>
+                </div>
+                <div class="child3" id="addBtnContainer">
+                    <button class="btn1" id="userBtn" onclick="addUser()">
+                        <i class="far fa-plus-square"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="addUserWrapper" id="optionalWrapper" style="display: none;">
+            <div class="addUser">
+                <div class="opt1">
+                    <div class="header">
+                        <div class="headerChild1">
+                            <h3>Add Todo</h3>
+                        </div>
+                        <div class="headerChild1">
+                            <div class="headerChild2">
+                                <i class="fas fa-paper-plane"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inputWrapper">
+                        <input type="text" name="" id="titleField" placeholder="Title" class="titleInput">
+                        <input type="text" name="" id="discriptionFiled" placeholder="Discription"class="discroptInput">
+                        <select name="" id="seletOpt1" class="dragDrop">
+                            <option value="" selected='true' disabled='true'>Select Type</option>
+                            <option value="work">Work</option>
+                            <option value="assign">Assignment</option>
+                            <option value="others">Others</option>
+                        </select>
+                        <select name="" id="seletOpt2" class="dragDrop">
+                            <option value="" selected='true' disabled='true'>Select Status</option>
+                            <option value="open">Open</option>
+                            <option value="inprogress">Inprogress</option>
+                            <option value="done">Done</option>
+                        </select>
+                        <button class="addData" onclick="addData()">Added</button>
+                    </div>
+                </div>
+                <div class="opt2">
+                    <div class="btnWrapper">
+                        <div class="crossBtn" onclick="crossBtn()">
+                            <i class="fas fa-times" style="color: white;" ></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- userBtns -->
+    <!-- <div id="dataInOpenContainer" class="dataContainer1">
+        <div class='dataHeader'>
+            <p class="title" id="titleDiv"></p>
+            <div class="logo" id="logoDiv"></div>
+        </div>
+        <div class="btnsDiv">
+            <button class="userBtn1" id="openBtn"></button>
+            <button class="userBtn2" id="inProgBtn"></button>
+            <button class="userBtn3" id="doneBtn"></button>
+        </div>
+    </div> -->
+</body>
+<script src="./js/app.js"></script>
+
+</html>

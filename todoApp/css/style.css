@@ -1,0 +1,565 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    /* font-family: 'McLaren', cursive; */
+    font-family: 'Yeon Sung', cursive;
+    background-color: #f6f7f9;
+}
+
+.mainBody{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+
+.addUserWrapper{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: 1px solid black;
+    background-color: blueviolet;
+}
+
+
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.secondContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    /* border: 1px solid blue; */
+}
+
+.child1{
+    width: 71%;
+    height: 100%;
+    position: relative;
+    /* border: 1px solid black; */
+}
+
+.child2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    height: 100%;
+    position: relative;
+    /* border: 1px solid black; */
+}
+
+.child3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    height: 100%;
+    position: relative;
+    /* border: 1px solid black; */
+}
+
+/* .child4{
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    border: 1px solid black;
+} */
+
+.optionWrapper{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+.headingWrapper{
+    width: 100%;
+    height: 105px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+.head1{
+    color: #ff5722;
+    font-weight: bold;
+    font-size: 35px;
+    /* border: 1px solid green; */
+}
+
+.head2{
+    color: #29b6f6;
+    font-weight: bold;
+    font-size: 35px;
+    /* border: 1px solid blue; */
+}
+
+.optionWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 37px;
+    /* border: 1px solid purple; */
+}
+
+.nestedChild1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32.8%;
+    height: 40px;
+    background-color: #29b6f6;
+    /* border: 1px solid red; */
+}
+
+.icon{
+    margin-left: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+.nestedChild2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 32.8%;
+    height: 40px;
+    background-color: #9575cd;
+    /* border: 1px solid green; */
+}
+
+.nestedChild3{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    width: 32.8%;
+    height: 40px;
+    font-size: 20px;
+    background-color: #bdbdbd;
+    /* border: 1px solid blue; */
+}
+
+.category1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    font-size: 17px;
+    width: 100%;
+    color: white;
+}
+
+.category2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    font-size: 17px;
+    width: 100%;
+    color: white;
+}
+
+.category3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    font-size: 17px;
+    width: 100%;
+    color: white;
+}
+
+.dataWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid yellow; */
+}
+
+.datail1 , .detail3{
+    display: flex;
+    align-items: flex-start;
+    justify-items: center;
+    height: 100%;
+    width: 32.8%;
+    background-color: #ebf0f3;
+    /* border: 1px solid red; */
+}
+
+.detail2{
+    display: flex;
+    justify-items: center;
+    align-items: flex-start;
+    height: 100%;
+    width: 32.7%;
+    /* border: 1px solid black; */
+}
+
+.addIcon{
+    background-color: #ff5252;
+    color: white;
+    /* border: none;*/
+}
+
+.btns{
+    position: relative;
+    display: block;
+    margin: 30px auto;
+    padding: 0;
+    overflow: hidden;
+    border-width: 0;
+    outline: none;
+    border-radius: 2px;
+}
+
+.btns::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 0;
+    padding-top: 0;
+    border-radius: 100%;
+    background-color: rgba(236, 240, 241, 0.3);
+    transform: translate(-50%, -50%);
+}
+
+.btn1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom : 8%;
+    right: 4%;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    text-align: center;
+    padding: 8px;
+    background: #ff5252;
+    border-radius: 60px;
+    box-shadow: 0 1px 20px 4px rgba(0, 0, 0, 0.6);
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    transition: 1s;
+}
+
+.addUser{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.opt1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 83%;
+    height: 100%;
+    /* background-color: #212526; */
+    border: 1px solid green;
+    background-color: #ffffff;
+}
+
+.opt2{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 17%;
+    height: 100%;
+    background-color: #101313;
+    border: 1px solid black;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    height: 40px;
+    /* border: 1px solid red; */
+    margin-bottom: 13px;
+}
+.headerChild1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerChild2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    background-color: #880e4f;
+    color: white
+}
+
+.inputWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    /* border: 1px solid yellow; */
+}
+
+.btnWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 50px;
+    /* border: 1px solid red; */
+}
+
+.crossBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 40%;
+    background-color: #ff5252;
+    transition: 0.5s;
+    /* border: 1px solid green; */
+}
+
+.crossBtn:hover{
+    width: 50%;
+    height: 33px;
+    transition: 0.3s;
+}
+
+.addBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 20%;
+    background-color: #5d6cc0;
+    border: 1px solid white;
+}
+
+.limitBtn{
+    display: flex;
+    align-items: center;
+    background-color: #00b0ff;
+    justify-content: center;
+    width: 40%;
+    height: 20%;
+    border: 1px solid green;
+}
+
+.openWrapper{
+    width: 80%;
+    border: 1px solid black;
+    height: 50px;
+}
+
+.titleInput{
+    width: 85%;
+    height: 37px;
+    font-family: 'Yeon Sung', cursive;
+    border: 2px solid black;
+    font-weight: bold;
+    color: black;
+    outline: none;
+}
+
+.discroptInput{
+    width: 85%;
+    height: 50px;
+    border: 2px solid black;
+    outline: none;
+    font-weight: bold;
+    color: black;
+    font-family: 'Yeon Sung', cursive;
+}
+
+.dragDrop{
+    width: 86%;
+    height: 25px;
+    font-family: 'Yeon Sung', cursive;
+    /* border: 1px solid blue; */
+}
+
+.addData{
+    width: 86%;
+    height: 40px;
+    border: none;
+    font-weight: bold;
+    color: white;
+    outline: none;
+    background-color: #29b6f6;
+}
+
+/* .titleInput{} */
+
+
+/*open ui*/
+.openChild{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+    margin-top: 5px;
+    width: 90%;
+    height: 70px;
+    border : 1px solid black
+}
+
+.headingWrapper2{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    height: 35px;
+    border: 1px solid red;
+}
+
+.titleName{
+    font-family: 'Yeon Sung', cursive;
+    font-weight: bold;
+}
+
+.working{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #29b6f6;
+    color: white;
+    font-weight: bold;
+}
+
+
+/* dataConatiner */
+.dataContainer1{
+    width: 95%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 5%;
+    box-shadow: 3px 3px 15px grey;
+    border-radius: 5px;
+    background-color: white;
+    /* border: 1px solid black; */
+}
+
+.dataHeader{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+    width: 98%;
+    height: 35px;
+    border: 1px solid red;
+}   
+
+.headerDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    /* border: 1px solid brown; */
+}
+
+.title{
+    font-family: 'Yeon Sung', cursive;
+    color: black;
+    /* font-weight: bold; */
+    /* border: 1px solid purple; */
+}
+.logo{
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+    color: white;
+    background-color: #29b6f6;
+}
+
+.btnsDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    /* border: 1px solid green; */
+    height: 40px;
+}
+
+.userBtn1{
+    width: 27%;
+    height: 33px;
+    color: white;
+    background-color: #29b6f6;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-family: 'Yeon Sung', cursive;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.userBtn2{
+    width: 40%;
+    height: 33px;
+    color: white;
+    background-color: #9575cd;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-family: 'Yeon Sung', cursive;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.userBtn3{
+    width: 30%;
+    height: 33px;
+    color: white;
+    background-color: #ff5722;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-family: 'Yeon Sung', cursive;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+@media(max-width: 700px) {
+    /* .secondContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } */
+  }
